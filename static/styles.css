@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+
+  body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling when the menu is open */
+  }
+
+  .head-bar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  }
+
+  .neurogenai {
+  font-weight: bold;
+  font-size: 2.2rem;
+  transition: all 0.3s ease;
+  }
+
+  .extras {
+  display: flex;
+  gap: 20px;
+  }
+
+  .extras div {
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  }
+
+  .side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1100;
+  }
+
+  .side-menu.open {
+  right: 0;
+  }
+
+  .side-menu a {
+  display: block;
+  color: white;
+  padding: 15px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  }
+
+  .side-menu a:hover {
+  background-color: #444;
+  }
+
+  .close-menu {
+  cursor: pointer;
+  font-size: 1.5rem;
+  float: right;
+  }
+
+  #mobile-menu {
+  display: none;
+  }
+
+  @media (max-width: 650px) {
+
+  .head-bar {
+    justify-content: space-between;
+  }
+  .extras {
+      display: none;
+  }
+
+  #mobile-menu {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+  }
+
+  @media (min-width: 651px) {
+  .extras {
+      display: flex;
+  }
+
+  #mobile-menu {
+      display: none;
+  }
+
+  .side-menu {
+      right: -250px; /* Ensure the side menu is hidden on large screens */
+  }
+  }
