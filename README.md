@@ -45,7 +45,7 @@ pip install -r requirements.txt
 - **Modular Architecture**: Easily extendable to add new diseases and treatment plans.
 
 ## References
-...
+.....
 
 ## Built With
 
