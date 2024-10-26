@@ -36,7 +36,6 @@ pip install -r requirements.txt
    - Ensure images are preprocessed to the same format and shape.
 
 
-...
 ## Features
 
 - **Multi-Disease Classifier**: A CNN-based classifier that detects multiple brain diseases, including tumors, strokes, and Alzheimer's Disease.
